@@ -74,6 +74,7 @@
             txtOpe1.Name = "txtOpe1";
             txtOpe1.Size = new Size(131, 23);
             txtOpe1.TabIndex = 3;
+            txtOpe1.TextChanged += ClearResult;
             // 
             // txtOperator
             // 
@@ -81,6 +82,7 @@
             txtOperator.Name = "txtOperator";
             txtOperator.Size = new Size(131, 23);
             txtOperator.TabIndex = 4;
+            txtOperator.TextChanged += ClearResult;
             // 
             // txtOpe2
             // 
@@ -88,6 +90,7 @@
             txtOpe2.Name = "txtOpe2";
             txtOpe2.Size = new Size(131, 23);
             txtOpe2.TabIndex = 5;
+            txtOpe2.TextChanged += ClearResult;
             // 
             // label4
             // 
@@ -123,7 +126,7 @@
             btnCalculate.TabIndex = 9;
             btnCalculate.Text = "&Calculate";
             btnCalculate.UseVisualStyleBackColor = true;
-            btnCalculate.Click += Calculate;
+            btnCalculate.Click += btnCalculate_Click;
             // 
             // btnExit
             // 

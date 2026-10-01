@@ -123,6 +123,7 @@
             btnCalculate.TabIndex = 9;
             btnCalculate.Text = "&Calculate";
             btnCalculate.UseVisualStyleBackColor = true;
+            btnCalculate.Click += Calculate;
             // 
             // btnExit
             // 
@@ -132,6 +133,7 @@
             btnExit.TabIndex = 10;
             btnExit.Text = "E&xit";
             btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // SimpleCalculator
             // 
@@ -149,6 +151,8 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            MaximumSize = new Size(243, 231);
+            MinimumSize = new Size(243, 231);
             Name = "SimpleCalculator";
             RightToLeftLayout = true;
             Text = "Simple Calculator";
